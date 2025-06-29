@@ -1,4 +1,14 @@
-import os
+def count_lines_from_input():
+    print("Введите текст (пустая строка для завершения ввода):")
 
-current_directory = os.getcwd()
-print(current_directory)
+    lines = []
+    while True:
+        line = input()
+        if line == "":
+            break
+        lines.append(line)
+
+    print(f"\nКоличество строк: {len(lines)}")
+
+if __name__ == "__main__":
+    count_lines_from_input()
