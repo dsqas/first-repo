@@ -8,7 +8,6 @@ def count_lines_from_input():
             break
         lines.append(line)
 
-    print(f"\nКоличество строк: {len(lines)}")
+    print("Количество строк:", len(lines))
 
-if __name__ == "__main__":
-    count_lines_from_input()
+count_lines_from_input()
